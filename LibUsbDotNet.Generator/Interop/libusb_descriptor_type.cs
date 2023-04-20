@@ -1,0 +1,20 @@
+namespace LibUsbDotNet;
+
+[NativeTypeName("unsigned int")]
+public enum libusb_descriptor_type : uint
+{
+    LIBUSB_DT_DEVICE = 0x01,
+    LIBUSB_DT_CONFIG = 0x02,
+    LIBUSB_DT_STRING = 0x03,
+    LIBUSB_DT_INTERFACE = 0x04,
+    LIBUSB_DT_ENDPOINT = 0x05,
+    LIBUSB_DT_INTERFACE_ASSOCIATION = 0x0b,
+    LIBUSB_DT_BOS = 0x0f,
+    LIBUSB_DT_DEVICE_CAPABILITY = 0x10,
+    LIBUSB_DT_HID = 0x21,
+    LIBUSB_DT_REPORT = 0x22,
+    LIBUSB_DT_PHYSICAL = 0x23,
+    LIBUSB_DT_HUB = 0x29,
+    LIBUSB_DT_SUPERSPEED_HUB = 0x2a,
+    LIBUSB_DT_SS_ENDPOINT_COMPANION = 0x30,
+}
